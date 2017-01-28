@@ -1,0 +1,10 @@
+<?php
+function one_out_of_two($str){
+	$l = strlen($str);
+	for($i=0; $i<=$l ; $i++ )
+		if ($i%2 == 0 && $str[$i] != " ") $str[$i] = strtoupper($str[$i]);
+	echo $str;
+}
+// test
+one_out_of_two('hello world');
+?>
