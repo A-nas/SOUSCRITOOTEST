@@ -1,3 +1,8 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+
+souscritoo_home:
+    path:     /souscritoo
+    defaults: { _controller: AppBundle:Welcome:index }
